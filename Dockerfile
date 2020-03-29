@@ -1,6 +1,6 @@
 FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 
-# add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get adde
+# add our user and group first to mak2e sure their IDs get assigned consistently, regardless of whatever dependencies get adde
 RUN groupadd -r richard && useradd -r -g richard richard
 RUN usermod -u 1000 richard
 RUN groupmod -g 1000 richard
